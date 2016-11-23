@@ -1,3 +1,8 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 header {
 	display: flex;
 	justify-content: space-around;
@@ -6,16 +11,17 @@ header {
 	font-size: 50px;
 }
 body {
-
-	background-color: WHITE;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
-
 .menu {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	background-color: rgb(76, 76, 76);
+	margin: 0;
 }
 
 .menu-text {
@@ -25,13 +31,16 @@ body {
 }
 
 .main {
-	width: 50%;
+	display: flex;
+	flex-grow: 1;
+	flex-flow: row wrap;
+	background-color: yellow;
+	width: 100%;
 }
 
-.aside {
-	width: 50%;
+.footer {
+	background-color: gray;
 }
-
 a {
     text-decoration: none;
     color:inherit;
@@ -45,13 +54,4 @@ a {
 	justify-content: flex-end;
 	background-color: rgb(76, 76, 76);
 	text-align: center;
-}
-
-@media (min-width: 600px) {
-	.menu {
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	background-color: rgb(76, 76, 76);
 }
