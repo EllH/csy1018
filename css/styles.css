@@ -30,7 +30,7 @@ body {
 	color: WHITE;
 }
 
-.main {
+.index-main, .contact-main, .bio-main, .cv-main {
 	display: flex;
 	flex-grow: 1;
 	flex-flow: row wrap;
@@ -38,9 +38,30 @@ body {
 	width: 100%;
 }
 
-.footer {
+.index-footer, .contact-footer, .bio-footer, .cv-footer {
 	background-color: gray;
 }
+
+.email-box {
+	height: 30vh;
+	width: 80vw;
+}
+
+.get-email {
+	height: 2vh;
+	width: 80vw;
+}
+
+.contact-main {
+	justify-content: center;
+}
+
+	
+
+
+
+
+
 a {
     text-decoration: none;
     color:inherit;
