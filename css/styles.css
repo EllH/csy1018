@@ -53,14 +53,9 @@ body {
 }
 
 .contact-main {
+	display: inline-flex;
 	justify-content: center;
 }
-
-	
-
-
-
-
 
 a {
     text-decoration: none;
