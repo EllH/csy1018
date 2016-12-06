@@ -1,4 +1,4 @@
-    html,
+html,
 body {
     margin: 0;
     padding: 0;
@@ -30,7 +30,6 @@ body {
     padding: 0;
     padding-right: 5%;
     padding-left: 5%;
-
 }
 
 .menu-text {
@@ -89,13 +88,11 @@ body {
     margin-bottom: 2%;
 }
 
-.footer-content {
-
-}
+.footer-content {}
 
 a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 
 @media (max-width: 600px) {
@@ -118,15 +115,17 @@ a {
     }
 }
 
-    .email-box {
-        height: 30vh;
-        width: 80vw;
-    }
-    .get-email {
-        height: 2vh;
-        width: 80vw;
-    }
-    .contact-main {
-        display: inline-flex;
-        justify-content: center;
-    }
+.email-box {
+    height: 30vh;
+    width: 80vw;
+}
+
+.get-email {
+    height: 2vh;
+    width: 80vw;
+}
+
+.contact-main {
+    display: inline-flex;
+    justify-content: center;
+}
