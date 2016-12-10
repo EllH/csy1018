@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="css/styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<title></title>
-	</head>
-	<body>
-		<header class="contact-main-header">
-			Elliot Higgs
-		</header>
-			<ul class="menu">
-				<li><a href="index.html">
-					<span class="menu-text">Home</span>
-				</a>
-			</li>
-			<li><a href="bio.html">
-				<span class="menu-text">Bio</span>
-			</a>
-		</li>
-		<li><a href="contact.html">
-			<span class="menu-text">Contact</span>
-		</a>
-	</li>
-	<li><a href="cv.html">
-		<span class="menu-text">CV</span>
-	</a>
-</li>
-</ul>
-<main class="contact-main">
-<form action="">
-	<section class="email-text">Email</section>
-	<section class="email-input-text"><input class="get-email" maxlength="500" type="text"></section>
-	<section class="email-content">Content</section>
-	<section class=email-content-input><input class="email-box" maxlength="500" type="text"></section>
-	<section class="email-send"><input type="submit" value="Send"></section>
-</form>
-</main>
-<footer class="contact-footer">
-This is my footer
-</footer>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <title>Contact Page</title>
+    </head>
+
+    <body>
+        <header class="index-main-header">
+            Elliot Higgs
+        </header>
+        <nav class="menu">
+            <ul class="nav">
+                <li class="index-link">
+                    <a href="index.html">
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="bio-link">
+                    <a href="bio.html">
+                        <span class="menu-text">Bio</span>
+                    </a>
+                </li>
+                <li class="contact-link">
+                    <a href="contact.html">
+                        <span class="menu-text">Contact</span>
+                    </a>
+                </li>
+                <li class="cv-link">
+                    <a href="cv.html">
+                        <span class="menu-text">CV</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contact-main-container">
+            <main class="contact-main">
+                <div class="form-container">
+                    <form id="contact-form" method="post" accept-charset="utf-8">
+                        <h4 class="contact-me-text">Contact Me</h4>
+                        <fieldset>
+                            <input placeholder="Your Email Address" type="text" required maxlength="32">
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type Your Message Here" required> </textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit-email" type="submit" id="submitbutton">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <div class="footer-container">
+            <footer class="footer">
+                <section class="footer-content">
+                    Sometimes i post things on <a href="https://twitter.com/H1ggsyx">Twitter</a> and I stream once a year on <a href="https://www.twitch.tv/h1ggsy">Twitch</a>
+                </section>
+            </footer>
+        </div>
+    </body>
+
 </html>
