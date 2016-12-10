@@ -42,6 +42,8 @@ body {
 }
 
 .index-main-container,
+.bio-main-container,
+.cv-main-container,
 .contact-main-container {
     display: flex;
     flex: 1 1 auto;
@@ -50,6 +52,30 @@ body {
 }
 
 .index-main {
+    display: inline-flex;
+    background-color: rgb(245, 245, 245);
+    width: 90%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BDBDBD;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+}
+
+.bio-main {
+    display: inline-flex;
+    background-color: rgb(245, 245, 245);
+    width: 90%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BDBDBD;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+}
+
+.cv-main {
     display: inline-flex;
     background-color: rgb(245, 245, 245);
     width: 90%;
@@ -149,15 +175,18 @@ a {
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
+    font-family: 'Lato', sans-serif;
 }
 
 #contact-form input[type="text"],
 #contact-form textarea {
     width: 90%;
     border: 1px solid #CCC;
-    background: #FFF;
+    background: #FFFFFF;
     margin: 0 0 5px;
     padding: 10px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
 }
 
 textarea {
