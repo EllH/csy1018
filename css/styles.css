@@ -1,4 +1,4 @@
-html,
+    html,
 body {
     margin: 0;
     padding: 0;
@@ -168,12 +168,12 @@ a {
 }
 
 #submitbutton {
-    width: 30%;
+    width: 200px;
+    height: 5vh;
     border: none;
     background: #9C27B0;
     color: #212121;
-    margin: 0 0 5px;
-    padding: 10px;
+    ;
     font-size: 15px;
     font-family: 'Lato', sans-serif;
 }
@@ -183,7 +183,6 @@ a {
     width: 90%;
     border: 1px solid #CCC;
     background: #FFFFFF;
-    margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
     font-family: 'Lato', sans-serif;
@@ -228,7 +227,6 @@ fieldset {
         font-size: 24px;
         color: #212121;
     }
-
     #submitbutton {
-    width: 100%;
-}
+        width: 100%;
+    }
