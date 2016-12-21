@@ -52,15 +52,43 @@ body {
 }
 
 .index-main {
-    display: inline-flex;
+    display: flex;
     background-color: rgb(245, 245, 245);
-    width: 90%;
+    max-height: 100%;
+    flex-direction: row;
     border-style: solid;
     border-width: 1px;
     border-color: #BDBDBD;
     margin-top: 1%;
     margin-bottom: 1%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+    width: 90%;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.Index-Main-Text {
+    flex: 1 1 auto;
+    padding-top: 3%;
+    width: 55%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #212121;
+    font-size: 32px;
+}
+
+.MainImg {
+    flex: 1 0 auto;
+    width: 10%;
+    background-color: blue;
+}
+
+    
+
+.me-picture {
+    width: 100%;
+    height: 100%;
 }
 
 .bio-main {
@@ -154,9 +182,6 @@ body {
     display: flex;
 
     align-items: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: green;
     margin: auto;
 }
 
@@ -231,9 +256,11 @@ fieldset {
 .form-container {
     max-width: 70%;
     width: 100%;
-    margin: 0 auto;
-    position: relative;
+    display: flex;
+    align-items: right;
 }
+
+
 
 @media (max-width: 600px) {
     .nav {
@@ -256,3 +283,15 @@ fieldset {
     #submitbutton {
         width: 100%;
     }
+
+.Index-Main-Text {
+    visibility: hidden;
+}
+.MainImg {
+    flex: 1 1 auto;
+    width: 200%;
+}
+.me-picture {
+    width: 200%;
+    height: 100%;
+}
