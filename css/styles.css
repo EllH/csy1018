@@ -220,23 +220,28 @@ a {
 
 #submitbutton {
     width: 200px;
-    height: 5vh;
     border: none;
     background: #9C27B0;
     color: #212121;
-    ;
-    font-size: 15px;
+    margin: 0 0 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
     font-family: 'Lato', sans-serif;
 }
 
 #contact-form input[type="text"],
 #contact-form textarea {
     width: 90%;
-    border: 1px solid #CCC;
-    background: #FFFFFF;
-    padding: 10px;
-    font-size: 15px;
+    border: solid;
+    border: 1px;
+    border-color: #BDBDBD;
+    color: #212121;
     font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    background: #FFFFFF;
+    margin: 0 0 5px;
+    padding: 10px;
 }
 
 textarea {
@@ -256,8 +261,8 @@ fieldset {
 .form-container {
     max-width: 70%;
     width: 100%;
-    display: flex;
-    align-items: right;
+    margin: 0 auto;
+    position: relative;
 }
 
 
@@ -281,7 +286,7 @@ fieldset {
         color: #212121;
     }
     #submitbutton {
-        width: 100%;
+        width: 200px;
     }
 
 .Index-Main-Text {
