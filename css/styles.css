@@ -103,7 +103,7 @@ h1 {
 
 .cv-main {
     display: inline-flex;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(245, 245, 245);
     width: 90%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -113,30 +113,36 @@ h1 {
 .Introduction {
     display: flex;
     flex: 1 1 auto;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-right: 5%;
     margin-left: 5%;
+    margin-top: 1%;
     margin-bottom: 1%;
     flex-direction: column;
+
 }
 
 .Projects {
     display: flex;
     flex: 1 1 auto;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
     margin-bottom: 1%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     flex-direction: column;
 }
 
 .Recent-Work {
     display: flex;
     flex: 1 1 auto;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 1%;
     margin-right: 5%;
-    margin-left: 5%;
     margin-bottom: 1%;
     flex-direction: column;
 }
