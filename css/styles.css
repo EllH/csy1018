@@ -84,8 +84,6 @@ h1 {
     background-color: blue;
 }
 
-    
-
 .me-picture {
     width: 100%;
     height: 100%;
@@ -105,14 +103,56 @@ h1 {
 
 .cv-main {
     display: inline-flex;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(189, 189, 189);
     width: 90%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #BDBDBD;
     margin-top: 1%;
     margin-bottom: 1%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+}
+
+.Introduction {
+    display: flex;
+    flex: 1 1 auto;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    flex-direction: column;
+}
+
+.Projects {
+    display: flex;
+    flex: 1 1 auto;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: 1%;
+    flex-direction: column;
+}
+
+.Recent-Work {
+    display: flex;
+    flex: 1 1 auto;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    flex-direction: column;
+}
+
+.Introduction-Header,
+.Projects-Header,
+.Recent-Work-Header {
+    font-size: 2em;
+    text-align: center;
+}
+
+.Indroduction-Text,
+.Projects-Text,
+.Recent-Work-Text {
+    font-size: 1em;
+    margin: 1%;
 }
 
 .contact-main {
@@ -142,7 +182,6 @@ h1 {
     padding: 0;
     margin: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
-
 }
 
 .footer-container {
@@ -163,10 +202,9 @@ h1 {
     height: 90%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
     justify-content: center;
-
 }
 
- .footer-list {
+.footer-list {
     list-style: none;
     display: flex;
     flex: 1 1 auto;
@@ -175,12 +213,10 @@ h1 {
     padding: 0;
     padding-right: 5%;
     padding-left: 5%;
-
- }
+}
 
 .footer-item {
     display: flex;
-
     align-items: center;
     margin: auto;
 }
@@ -265,8 +301,6 @@ fieldset {
     position: relative;
 }
 
-
-
 @media (max-width: 600px) {
     .nav {
         list-style: none;
@@ -288,15 +322,33 @@ fieldset {
     #submitbutton {
         width: 200px;
     }
-
-.Index-Main-Text {
-    visibility: hidden;
-}
-.MainImg {
-    flex: 1 1 auto;
-    width: 200%;
-}
-.me-picture {
-    width: 200%;
-    height: 100%;
+    .Index-Main-Text {
+        visibility: hidden;
+    }
+    .MainImg {
+        flex: 1 1 auto;
+        width: 200%;
+    }
+    .me-picture {
+        width: 200%;
+        height: 100%;
+    }
+    .cv-main-container {
+        overflow: auto;
+    }
+    .cv-main {
+        flex-direction: column;
+        overflow: auto;
+    }
+    .Projects {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-overflow: ellipsis;
+    }
+    .Recent-Work {
+        text-overflow: ellipsis;
+    }
+    .Introduction {
+        text-overflow: ellipsis;
+    }
 }
