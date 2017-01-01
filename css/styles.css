@@ -1,4 +1,4 @@
-html,
+    html,
 body {
     margin: 0;
     padding: 0;
@@ -90,15 +90,29 @@ h1 {
 }
 
 .bio-main {
-    display: inline-flex;
+    display: flex;
     background-color: rgb(245, 245, 245);
     width: 90%;
     border-style: solid;
     border-width: 1px;
     border-color: #BDBDBD;
+    flex-direction: column;
     margin-top: 1%;
     margin-bottom: 1%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.AboutMe-Header {
+    margin-top: 5%;
+    font-size: 6em;
+    text-align: center;
+}
+
+.AboutMe-Text {
+    font-size: 2em;
+    margin-top: 2%;
+    margin-left: 30%;
 }
 
 .cv-main {
@@ -119,7 +133,6 @@ h1 {
     margin-top: 1%;
     margin-bottom: 1%;
     flex-direction: column;
-
 }
 
 .Projects {
@@ -152,6 +165,7 @@ h1 {
 .Recent-Work-Header {
     font-size: 2em;
     text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .Indroduction-Text,
@@ -159,6 +173,7 @@ h1 {
 .Recent-Work-Text {
     font-size: 1em;
     margin: 1%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .contact-main {
@@ -308,6 +323,12 @@ fieldset {
 }
 
 @media (max-width: 600px) {
+    .index-main-container,
+    .bio-main-container,
+    .cv-main-container,
+    .contact-main-container {
+        overflow: auto;
+    }
     .nav {
         list-style: none;
         display: flex;
@@ -339,9 +360,6 @@ fieldset {
         width: 200%;
         height: 100%;
     }
-    .cv-main-container {
-        overflow: auto;
-    }
     .cv-main {
         flex-direction: column;
         overflow: auto;
@@ -357,4 +375,10 @@ fieldset {
     .Introduction {
         text-overflow: ellipsis;
     }
-}
+    .AboutMe-Text {
+        margin-left: 10%;
+        text-overflow: ellipsis;
+    }
+    .AboutMe-Header {
+        font-size: 4em;
+    }
