@@ -72,6 +72,7 @@ h1 {
 .Index-Main-Text {
     flex: 1 1 auto;
     padding-top: 3%;
+    margin-left: 3%;
     width: 55%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #212121;
@@ -111,8 +112,7 @@ h1 {
 
 .AboutMe-Text {
     font-size: 2em;
-    margin-top: 2%;
-    margin-left: 30%;
+    text-align: center;
 }
 
 .cv-main {
@@ -163,7 +163,7 @@ h1 {
 .Introduction-Header,
 .Projects-Header,
 .Recent-Work-Header {
-    font-size: 2em;
+    font-size: 4em;
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -171,9 +171,10 @@ h1 {
 .Indroduction-Text,
 .Projects-Text,
 .Recent-Work-Text {
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 1%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
 }
 
 .contact-main {
@@ -371,14 +372,30 @@ fieldset {
     }
     .Recent-Work {
         text-overflow: ellipsis;
+        margin-left: 5%;
     }
     .Introduction {
         text-overflow: ellipsis;
     }
     .AboutMe-Text {
-        margin-left: 10%;
         text-overflow: ellipsis;
+        font-size: 1.5em;
     }
     .AboutMe-Header {
-        font-size: 4em;
+        font-size: 3em;
+    }
+    .Introduction-Header,
+    .Projects-Header,
+    .Recent-Work-Header {
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+    .Indroduction-Text,
+    .Projects-Text,
+    .Recent-Work-Text {
+        font-size: 1em;
+        margin: 1%;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        text-align: center;
     }
