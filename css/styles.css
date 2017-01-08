@@ -1,4 +1,4 @@
-    html,
+html,
 body {
     margin: 0;
     padding: 0;
@@ -65,18 +65,14 @@ body {
     width: 90%;
 }
 
-h1 {
-    font-size: 100px;
-}
-
 .Index-Main-Text {
     flex: 1 1 auto;
     padding-top: 3%;
-    margin-left: 3%;
+    margin: 3%;
     width: 55%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #212121;
-    font-size: 32px;
+    font-size: 4em;
 }
 
 .MainImg {
@@ -87,6 +83,10 @@ h1 {
 .me-picture {
     width: 100%;
     height: 100%;
+}
+
+.Mobile-Heading {
+    visibility: hidden;
 }
 
 .bio-main {
@@ -276,6 +276,40 @@ a {
     }
 }
 
+@keyframes widthchange {
+    0% {
+        width: 200%;
+    }
+    10% {
+        width: 150%;
+    }
+    20% {
+        width: 100%;
+    }
+    30% {
+        width: 50%;
+    }
+    40% {
+        width: 0%;
+    }
+
+    50% {
+        width: 50%;
+    }
+    60% {
+        width: 100%;
+    }
+    70% {
+        width: 150%;
+    }
+    80% {
+        width: 175%;
+    }
+    100% {
+        width: 200%;
+    }
+}
+
 #submitbutton {
     width: 200px;
     border: none;
@@ -324,7 +358,6 @@ fieldset {
 }
 
 @media (max-width: 600px) {
-
     .bio-main-container,
     .cv-main-container,
     .contact-main-container {
@@ -357,6 +390,7 @@ fieldset {
         flex: 1 1 auto;
         max-height: 100%;
         width: 200%;
+        animation: widthchange 10s linear 1;
     }
     .me-picture {
         width: 200%;
@@ -383,7 +417,7 @@ fieldset {
         margin-left: 5%;
     }
     .AboutMe-Text {
-        text-overflow:clip;
+        text-overflow: clip;
         font-size: 1.5em;
     }
     .AboutMe-Header {
