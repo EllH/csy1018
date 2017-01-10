@@ -112,7 +112,7 @@ body {
 }
 
 .cv-main {
-    display: inline-flex;
+    display: flex;
     background-color: rgb(245, 245, 245);
     width: 90%;
     margin-top: 1%;
@@ -121,7 +121,7 @@ body {
 }
 
 .Introduction {
-    display: flex;
+    display: inline-flex;
     width: 30%;
     background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -132,7 +132,7 @@ body {
 }
 
 .Projects {
-    display: flex;
+    display: inline-flex;
     width: 30%;
     background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -146,7 +146,7 @@ body {
 }
 
 .Recent-Work {
-    display: flex;
+    display: inline-flex;
     width: 30%;
     background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
