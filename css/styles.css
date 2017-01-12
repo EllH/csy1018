@@ -3,105 +3,113 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*Elliot Higgs Layout*/
 header {
-    display: flex;
     font-family: 'Lato', sans-serif;
-    color: #212121;
     font-size: 6vh;
+    display: flex;
     text-align: center;
-    justify-content: center;
+    color: #212121;
     background-color: rgb(189, 189, 189);
+    justify-content: center;
 }
-
+/*Sets the body to fill whole page*/
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
+/*Navigation Layout*/
 .nav {
-    list-style: none;
     display: flex;
     flex-direction: row;
-    background-color: rgb(189, 189, 189);
-    border-width: 1px;
-    border-color: rgb(189, 189, 189);
     margin: 0;
     padding: 0;
     padding-right: 5%;
     padding-left: 5%;
+    list-style: none;
+    border-width: 1px;
+    border-color: rgb(189, 189, 189);
+    background-color: rgb(189, 189, 189);
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    align-self: center;
 }
 
 .menu-text,
 .contact-me-text {
     font-family: 'Lato', sans-serif;
     font-size: 200%;
-    color: #212121;
     text-align: center;
+    color: #212121;
 }
-
+/*Sets the Area for the containers on all pages*/
 .index-main-container,
 .bio-main-container,
 .cv-main-container,
 .contact-main-container {
     display: flex;
-    flex: 1 1 auto;
     background-color: rgb(189, 189, 189);
+    flex: 1 1 auto;
     justify-content: center;
 }
-
+/*Aligns the main content*/
 .index-main {
     display: flex;
-    background-color: rgb(245, 245, 245);
-    max-height: 100%;
     flex-direction: row;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #BDBDBD;
+    width: 90%;
+    max-height: 100%;
     margin-top: 1%;
     margin-bottom: 1%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
-    width: 90%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
 }
-
+/*Used for adjust main text on homepage*/
 .Index-Main-Text {
-    flex: 1 1 auto;
-    padding-top: 3%;
-    margin: 3%;
-    width: 55%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: #212121;
     font-size: 4em;
+    width: 55%;
+    margin: 3%;
+    padding-top: 3%;
+    color: #212121;
+    flex: 1 1 auto;
 }
-
+/*Used to adjust image*/
 .MainImg {
-    flex: 1 0 auto;
     width: 10%;
+    flex: 1 0 auto;
 }
 
 .me-picture {
     width: 100%;
     height: 100%;
 }
-
+/*Aligns the bio content*/
 .bio-main {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     display: flex;
-    background-color: rgb(245, 245, 245);
-    width: 90%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #BDBDBD;
     flex-direction: column;
+    width: 90%;
     margin-top: 1%;
     margin-bottom: 1%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
 }
-
+/*Used for adjust text on Bio page*/
 .AboutMe-Header {
-    margin-top: 5%;
     font-size: 6em;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -110,134 +118,134 @@ body {
     text-align: center;
     text-overflow: clip;
 }
-
+/*Aligns the cv content*/
 .cv-main {
     display: flex;
-    background-color: rgb(245, 245, 245);
     width: 90%;
     margin-top: 1%;
     margin-bottom: 1%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
 }
 
 .Introduction {
-    display: inline-flex;
-    width: 30%;
-    background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-left: 5%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
     margin-top: 1%;
     margin-bottom: 1%;
-    flex-direction: column;
+    margin-left: 5%;
+    background-color: rgb(255, 255, 255);
 }
 
 .Projects {
-    display: inline-flex;
-    width: 30%;
-    background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
     margin-top: 1%;
     margin-right: 5%;
-    margin-left: 5%;
     margin-bottom: 1%;
-    padding-left: 2.5%;
+    margin-left: 5%;
     padding-right: 2.5%;
-    flex-direction: column;
+    padding-left: 2.5%;
+    background-color: rgb(255, 255, 255);
 }
 
 .Recent-Work {
-    display: inline-flex;
-    width: 30%;
-    background-color: rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
     margin-top: 1%;
     margin-right: 5%;
     margin-bottom: 1%;
-    flex-direction: column;
+    background-color: rgb(255, 255, 255);
 }
-
+/*Used to adjust text on cv page*/
 .Introduction-Header,
 .Projects-Header,
 .Recent-Work-Header {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 225%;
     text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .Indroduction-Text,
 .Projects-Text,
 .Recent-Work-Text {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1.5em;
     margin: 1%;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
     text-align: center;
 }
-
+/*Aligns the form on the contact page*/
 .contact-main {
     display: inline-flex;
-    background-color: rgb(245, 245, 245);
     width: 90%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #BDBDBD;
     margin-top: 1%;
     margin-bottom: 1%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
 }
-
+/*Used to Style the navigation bar links*/
 .index-link,
 .bio-link,
 .contact-link,
 .cv-link {
     display: inline-flex;
-    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     border-width: 1px;
     border-style: solid;
-    justify-content: center;
-    text-align: center;
-    background-color: #9C27B0;
     border-color: rgb(189, 189, 189);
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+    background-color: #9c27b0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
+    flex: 1 1 auto;
+    justify-content: center;
 }
-
+/*Layout for Footer*/
 .footer-container {
     display: flex;
-    flex: 0 1 auto;
-    background-color: rgb(189, 189, 189);
-    justify-content: center;
     flex-direction: row;
+    background-color: rgb(189, 189, 189);
+    flex: 0 1 auto;
+    justify-content: center;
 }
 
 .footer-content {
     display: inline-flex;
-    background-color: rgb(245, 245, 245);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #BDBDBD;
     width: 90%;
     height: 90%;
     padding-top: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.20);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
     justify-content: center;
 }
 
 .footer-list {
-    list-style: none;
     display: flex;
-    flex: 1 1 auto;
     flex-direction: row;
     margin: 0;
     padding: 0;
     padding-right: 5%;
     padding-left: 5%;
+    list-style: none;
+    flex: 1 1 auto;
 }
 
 .footer-item {
     display: flex;
-    align-items: center;
     margin: auto;
+    align-items: center;
 }
 
 #footer-item {
@@ -245,14 +253,8 @@ body {
     flex: 0 0 auto;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    align-self: center;
-    width: 100%;
-    height: 100%;
-}
 
+/*Change colour on hovering*/
 .index-link:hover,
 .bio-link:hover,
 .contact-link:hover,
@@ -260,16 +262,16 @@ a {
 #submitbutton:hover {
     animation: changecolour 2s linear infinite;
 }
-
+/*Animations*/
 @keyframes changecolour {
     0% {
-        background-color: #9C27B0
+        background-color: #9c27b0;
     }
     50% {
-        background-color: #7B1FA2
+        background-color: #7b1fa2;
     }
     100% {
-        background-color: #9C27B0
+        background-color: #9c27b0;
     }
 }
 
@@ -287,7 +289,7 @@ a {
         width: 50%;
     }
     40% {
-        width: 0%;
+        width: 0;
     }
     50% {
         width: 50%;
@@ -306,52 +308,57 @@ a {
     }
 }
 
-#submitbutton {
-    width: 200px;
-    border: none;
-    background: #9C27B0;
-    color: #212121;
-    margin: 0 0 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 24px;
-    font-family: 'Lato', sans-serif;
+
+/*Layout for Contact Page*/
+.form-container {
+    position: relative;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
-#contact-form input[type="text"],
+#contact-form input[type='email'],
 #contact-form textarea {
-    width: 90%;
-    border: solid;
-    border: 1px;
-    border-color: #BDBDBD;
-    color: #212121;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    background: #FFFFFF;
+    width: 90%;
     margin: 0 0 5px;
     padding: 10px;
+    color: #212121;
+    border: solid;
+    border: 1px;
+    border-color: #bdbdbd;
+    background: #fff;
 }
 
 textarea {
-    height: 100px;
     max-width: 90%;
+    height: 100px;
     resize: none;
 }
 
 fieldset {
-    border: none;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
     width: 100%;
+    min-width: 100%;
+    margin: 0 0 10px;
+    padding: 0;
+    border: none;
 }
 
-.form-container {
-    max-width: 70%;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
+#submitbutton {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    width: 200px;
+    margin: 0 0 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #212121;
+    border: none;
+    background: #9c27b0;
 }
+
+
+/*This media query is used to fix the layout problems on smaller screens*/
 
 @media (max-width: 600px) {
     .bio-main-container,
@@ -359,80 +366,87 @@ fieldset {
     .contact-main-container {
         overflow: auto;
     }
+    /*Changes Navigation Bar to column layout*/
     .nav {
-        list-style: none;
         display: flex;
         flex-direction: column;
-        background-color: rgb(189, 189, 189);
-        border-width: 1px;
-        border-color: rgb(189, 189, 189);
         margin: 0;
         padding: 0;
         padding-right: 5%;
         padding-left: 5%;
+        list-style: none;
+        border-width: 1px;
+        border-color: rgb(189, 189, 189);
+        background-color: rgb(189, 189, 189);
     }
+    /*Changes Size of Navigation Bar Text*/
     .menu-text {
         font-family: 'Lato', sans-serif;
         font-size: 24px;
         color: #212121;
     }
+    /*Changes the width of the submit button on contact page to suit smaller devices*/
     #submitbutton {
         width: 80%;
     }
+    /*Hides Index Text*/
     .Index-Main-Text {
         visibility: hidden;
     }
+    /*Allows the image to fill the whole page*/
     .MainImg {
-        flex: 1 1 auto;
-        max-height: 100%;
         width: 200%;
+        max-height: 100%;
         animation: widthchange 10s linear 1;
+        flex: 1 1 auto;
     }
     .me-picture {
         width: 200%;
         height: 99%;
         margin-left: 20%;
     }
+    /*Changes the the cv page to suit smaller devices*/
     .cv-main {
-        flex-direction: column;
         overflow: auto;
+        flex-direction: column;
     }
     .Introduction {
-        display: flex;
-        width: 90%;
-        background-color: rgb(255, 255, 255);
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        text-overflow: clip;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
         margin-right: 5%;
         margin-left: 5%;
-        flex-direction: column;
+        text-overflow: clip;
+        background-color: rgb(255, 255, 255);
     }
     .Projects {
-        display: flex;
-        flex: 1 1 auto;
-        width: 85%;
-        background-color: rgb(255, 255, 255);
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        margin-left: 5%;
-        margin-right: 5%;
-        text-overflow: clip;
-        padding-left: 2.5%;
-        padding-right: 2.5%;
+        display: flex;
         flex-direction: column;
+        width: 85%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        text-overflow: clip;
+        background-color: rgb(255, 255, 255);
+        flex: 1 1 auto;
     }
     .Recent-Work {
-        display: flex;
-        width: 90%;
-        background-color: rgb(255, 255, 255);
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        text-overflow: clip;
-        margin-left: 5%;
-        margin-right: 5%;
+        display: flex;
         flex-direction: column;
-    }
-    .AboutMe-Text {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
         text-overflow: clip;
+        background-color: rgb(255, 255, 255);
+    }
+    /*Changes the About Me page to */
+    .AboutMe-Text {
         font-size: 1.5em;
+        text-overflow: clip;
     }
     .AboutMe-Header {
         font-size: 3em;
@@ -440,61 +454,64 @@ fieldset {
     .Introduction-Header,
     .Projects-Header,
     .Recent-Work-Header {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
         font-size: 2em;
         text-align: center;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
     }
     .Indroduction-Text,
     .Projects-Text,
     .Recent-Work-Text {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
         font-size: 1em;
         margin: 1%;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
         text-align: center;
     }
 }
 
+
+/*This media query is used to fix the layout problem on cv page*/
+
 @media (max-width: 1100px) {
+    /*Change Layout to Columns and allow overflowing of content*/
     .cv-main {
+        overflow: auto;
         flex-direction: column;
+    }
+    .cv-main-container {
         overflow: auto;
     }
-    .bio-main-container,
-    .cv-main-container,
-    .contact-main-container {
-        overflow: auto;
-    }
+    /*Changes the size of the content boxes*/
     .Introduction {
-        display: flex;
-        width: 90%;
-        background-color: rgb(255, 255, 255);
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        text-overflow: clip;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
         margin-right: 5%;
         margin-left: 5%;
-        flex-direction: column;
+        text-overflow: clip;
+        background-color: rgb(255, 255, 255);
     }
     .Projects {
-        display: flex;
-        flex: 1 1 auto;
-        width: 85%;
-        background-color: rgb(255, 255, 255);
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        margin-left: 5%;
-        margin-right: 5%;
-        text-overflow: clip;
-        padding-left: 2.5%;
-        padding-right: 2.5%;
+        display: flex;
         flex-direction: column;
+        width: 85%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        text-overflow: clip;
+        background-color: rgb(255, 255, 255);
+        flex: 1 1 auto;
     }
     .Recent-Work {
-        display: flex;
-        width: 90%;
-        background-color: rgb(255, 255, 255);
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        text-overflow: clip;
-        margin-left: 5%;
-        margin-right: 5%;
+        display: flex;
         flex-direction: column;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        text-overflow: clip;
+        background-color: rgb(255, 255, 255);
     }
 }
