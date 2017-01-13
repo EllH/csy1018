@@ -3,7 +3,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 /*Elliot Higgs Layout*/
+
 header {
     font-family: 'Lato', sans-serif;
     font-size: 6vh;
@@ -13,13 +16,19 @@ header {
     background-color: rgb(189, 189, 189);
     justify-content: center;
 }
+
+
 /*Sets the body to fill whole page*/
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
+
 /*Navigation Layout*/
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -48,7 +57,10 @@ a {
     text-align: center;
     color: #212121;
 }
+
+
 /*Sets the Area for the containers on all pages*/
+
 .index-main-container,
 .bio-main-container,
 .cv-main-container,
@@ -58,7 +70,10 @@ a {
     flex: 1 1 auto;
     justify-content: center;
 }
+
+
 /*Aligns the main content*/
+
 .index-main {
     display: flex;
     flex-direction: row;
@@ -72,7 +87,10 @@ a {
     background-color: rgb(245, 245, 245);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
 }
+
+
 /*Used for adjust main text on homepage*/
+
 .Index-Main-Text {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 4em;
@@ -82,7 +100,10 @@ a {
     color: #212121;
     flex: 1 1 auto;
 }
+
+
 /*Used to adjust image*/
+
 .MainImg {
     width: 10%;
     flex: 1 0 auto;
@@ -92,7 +113,10 @@ a {
     width: 100%;
     height: 100%;
 }
+
+
 /*Aligns the bio content*/
+
 .bio-main {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     display: flex;
@@ -106,7 +130,10 @@ a {
     background-color: rgb(245, 245, 245);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
 }
+
+
 /*Used for adjust text on Bio page*/
+
 .AboutMe-Header {
     font-size: 6em;
     margin-top: 5%;
@@ -118,7 +145,10 @@ a {
     text-align: center;
     text-overflow: clip;
 }
+
+
 /*Aligns the cv content*/
+
 .cv-main {
     display: flex;
     width: 90%;
@@ -163,7 +193,10 @@ a {
     margin-bottom: 1%;
     background-color: rgb(255, 255, 255);
 }
+
+
 /*Used to adjust text on cv page*/
+
 .Introduction-Header,
 .Projects-Header,
 .Recent-Work-Header {
@@ -180,7 +213,10 @@ a {
     margin: 1%;
     text-align: center;
 }
+
+
 /*Aligns the form on the contact page*/
+
 .contact-main {
     display: inline-flex;
     width: 90%;
@@ -192,7 +228,10 @@ a {
     background-color: rgb(245, 245, 245);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .20);
 }
+
+
 /*Used to Style the navigation bar links*/
+
 .index-link,
 .bio-link,
 .contact-link,
@@ -209,7 +248,10 @@ a {
     flex: 1 1 auto;
     justify-content: center;
 }
+
+
 /*Layout for Footer*/
+
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -255,6 +297,7 @@ a {
 
 
 /*Change colour on hovering*/
+
 .index-link:hover,
 .bio-link:hover,
 .contact-link:hover,
@@ -262,7 +305,10 @@ a {
 #submitbutton:hover {
     animation: changecolour 2s linear infinite;
 }
+
+
 /*Animations*/
+
 @keyframes changecolour {
     0% {
         background-color: #9c27b0;
@@ -310,6 +356,7 @@ a {
 
 
 /*Layout for Contact Page*/
+
 .form-container {
     position: relative;
     width: 100%;
